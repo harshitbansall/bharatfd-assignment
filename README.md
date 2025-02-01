@@ -63,6 +63,8 @@ pytest
 To set up the project with Docker, you can use the following command:
 
 ```bash
+git clone https://github.com/harshitbansall/bharatfd-assignment.git
+cd bharatfd-assignment
 docker compose up --build
 ```
 
