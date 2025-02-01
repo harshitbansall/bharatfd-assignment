@@ -32,6 +32,7 @@ Use the following credentials to log in:
 
 ## 🌟 Features Implemented:
 
+- ✅ Automatic Translations while object creation
 - ✅ Multi-language translation using Google Translate
 - ✅ REST API with language selection
 - ✅ Individual FAQ translation and caching
@@ -95,6 +96,10 @@ curl http://bharatfd-assignment.devharshit.in/api/faqs/?lang=hi
 # Fetch FAQs in Bengali
 curl http://bharatfd-assignment.devharshit.in/api/faqs/?lang=bn
 ```
+
+# Schema
+![Screenshot 2025-02-01 at 9 08 29 PM](https://github.com/user-attachments/assets/5fc58041-0d22-40a8-a445-5c1d88b8954f)
+
 
 # 📝 Contribution Guidelines
 
