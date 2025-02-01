@@ -11,7 +11,9 @@ This repository contains the backend solution for the BharatFD assignment. The c
 4. [⚙️ Quick Setup without Docker](#quick-setup-without-docker)
 5. [🐳 Quick Setup with Docker](#quick-setup-with-docker)
 6. [📡 API Usage](#api-usage)
-7. [💬 Contribution Guidelines](#contribution-guidelines)
+7. [🧩 Schema](#schema)
+8. [💬 Contribution Guidelines](#contribution-guidelines)
+9. [📞 Contact](#contact)
 
 ## 🚀 Deployment
 
@@ -32,7 +34,9 @@ Use the following credentials to log in:
 
 ## 🌟 Features Implemented:
 
-- ✅ Automatic Translations while object creation
+- ✅ Automatic Translations while FAQ creation
+- ✅ Optimized SQL queries with `Prefetch`
+- ✅ Optimal Schema for production ready environment
 - ✅ Multi-language translation using Google Translate
 - ✅ REST API with language selection
 - ✅ Individual FAQ translation and caching
