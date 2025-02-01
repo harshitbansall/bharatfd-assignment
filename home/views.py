@@ -1,5 +1,6 @@
 from django.core.cache import cache
 from django.db.models import Prefetch
+from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -17,7 +18,7 @@ class FAQView(APIView):
             return Response(data={
                 "success": "true",
                 "data": cached_data
-            })
+            }, status=status.HTTP_200_OK)
 
         faqs = FAQ.objects.prefetch_related(
             Prefetch(
@@ -32,4 +33,4 @@ class FAQView(APIView):
         return Response(data={
             "success": "true",
             "data": serializer.data
-        })
+        }, status=status.HTTP_200_OK)

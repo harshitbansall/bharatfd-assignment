@@ -18,7 +18,6 @@ class FAQSerializer(serializers.ModelSerializer):
         fields = ['id', 'question', 'answer']
 
     def to_representation(self, instance):
-        lang = self.context.get("lang", "en")
         translations = instance.filtered_translations
         if translations:
             translated = translations[0]

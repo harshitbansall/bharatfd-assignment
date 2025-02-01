@@ -15,11 +15,14 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='FAQTranslation',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('language', models.CharField(choices=[('hi', 'Hindi'), ('bn', 'Bengali')], max_length=10)),
+                ('id', models.BigAutoField(auto_created=True,
+                 primary_key=True, serialize=False, verbose_name='ID')),
+                ('language', models.CharField(choices=[
+                 ('hi', 'Hindi'), ('bn', 'Bengali')], max_length=10)),
                 ('question', models.TextField()),
                 ('answer', ckeditor.fields.RichTextField(blank=True, null=True)),
-                ('faq', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='translations', to='home.faq')),
+                ('faq', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE,
+                 related_name='translations', to='home.faq')),
             ],
             options={
                 'db_table': 'faq_translations',
