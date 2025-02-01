@@ -42,6 +42,16 @@ CKEDITOR_CONFIGS = {
     },
 }
 
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://redis:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -52,6 +62,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'ckeditor',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
