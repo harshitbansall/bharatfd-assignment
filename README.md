@@ -19,13 +19,13 @@ This repository contains the backend solution for the BharatFD assignment. The c
 
 The project is deployed on a DigitalOcean droplet. You can access the application via the following link:
 
-[http://bharatfd-assignment.devharshit.in](http://bharatfd-assignment.devharshit.in)
+[http://bharatfd-assignment.devharshit.in:8000](http://bharatfd-assignment.devharshit.in:8000)
 
 ## 🔑 Admin Site
 
 You can access the Django admin site for the project at:
 
-[http://bharatfd-assignment.devharshit.in/admin](http://bharatfd-assignment.devharshit.in/admin)
+[http://bharatfd-assignment.devharshit.in:8000/admin](http://bharatfd-assignment.devharshit.in:8000/admin)
 
 Use the following credentials to log in:
 
@@ -92,13 +92,13 @@ curl http://localhost:8000/api/faqs/?lang=bn
 - For Deployment
 ```bash
 # Fetch FAQs in English (default)
-curl http://bharatfd-assignment.devharshit.in/api/faqs/
+curl http://bharatfd-assignment.devharshit.in:8000/api/faqs/
 
 # Fetch FAQs in Hindi
-curl http://bharatfd-assignment.devharshit.in/api/faqs/?lang=hi
+curl http://bharatfd-assignment.devharshit.in:8000/api/faqs/?lang=hi
 
 # Fetch FAQs in Bengali
-curl http://bharatfd-assignment.devharshit.in/api/faqs/?lang=bn
+curl http://bharatfd-assignment.devharshit.in:8000/api/faqs/?lang=bn
 ```
 
 # Schema
